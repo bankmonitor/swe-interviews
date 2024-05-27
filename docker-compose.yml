@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: bankmonitor
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  transaction-service:
+    build:
+      context: ./transaction-service
+    container_name: transaction-service
+    depends_on:
+      - db
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8080:8080"
+
+volumes:
+  db_data:
