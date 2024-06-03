@@ -1,7 +1,6 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.debug.settings.onBuildFailureProceed": true,
-    "java.project.importOnFirstTimeStartup": "automatic",
     "java.import.maven.enabled": true,
     "java.configuration.runtimes": [
         {
