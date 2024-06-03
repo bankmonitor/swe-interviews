@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/java
 {
 	"name": "Java",
-	"image": "mcr.microsoft.com/devcontainers/universal:2.11.1-linux",
+	"image": "mcr.microsoft.com/devcontainers/universal:latest",
 
 	// Configure tool-specific properties.
 	"customizations": {
