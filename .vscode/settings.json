@@ -1,4 +1,17 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "java.import.maven.enabled": true,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "/usr/local/sdkman/candidates/java/21.0.3-ms",
+        },
+        {
+            "name": "JavaSE-17",
+            "path": "/usr/local/sdkman/candidates/java/17.0.11-ms",
+            "default": true
+        }
+    ]
 }
